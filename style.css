@@ -1,12 +1,13 @@
 .container {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    display: block;
     grid-template-areas:
-      "title"
-      "attentiongrab"
-      "attentiongrab"
-      "images"
-      "footer";
+      "title "
+      "attentiongrab "
+      "attentiongrab "
+      "images images "
+      "footer footer ";
   }
   
   .title { 
@@ -16,31 +17,92 @@
       margin: 0 auto;
       align-self: center;
       justify-self: center;
+      border: 3px solid black;
+      padding: 50px;
     }
+
+  img {
+    width: 100%;
+  }
   
   .attentiongrab { 
       grid-area: attentiongrab; 
       background-image: url(./backgroundAttnGrab.jpeg);
-      background-size:contain;
+      background-size:cover;
       background-repeat: no-repeat;
       min-width: 100%;
-      margin: 0 auto;
-      padding-top: none;
-      /* padding-bottom: 500px; */
     }
+
+  .p-attm {
+      background-color:  black;
+      color: white;
+      float: right;
+      /* margin-right: 50%; */
+      min-width: 100%;
+    }
+
+  .attention {
+      background-color: white;
+      float: right;
+      margin-right: 50%;
+  }
+
+  button {
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    float: left;
+  }
   
+  button:hover {
+        padding: 12px ;
+  }
   .images { 
       grid-area: images; 
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
+
+  span {
+    display: block;
+  }
   
   .footer { 
       grid-area: footer; 
     }
+
+  .foot {
+    float: left;
+  }
+  
+  .socials {
+    float: right;
+    text-align: right;
+    }
+
+  a:hover {
+    /* box-shadow: 10px 5px 5px red;
+    border: 3px red solid; */
+    filter:brightness(50%);
+    background-color: rgb(10, 10, 10, .2);
+  }
   
 /* ________________________________________________ */
 /* Set the style for tablet screens */
 
 @media(min-width:617px) {
+  .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "title title title"
+      "attentiongrab attentiongrab attentiongrab"
+      "attentiongrab attentiongrab attentiongrab"
+      "images images images"
+      "footer footer footer";
+  }
 
 }
 
@@ -49,7 +111,7 @@
 /* ________________________________________________ */
 /* Set the style for desktop screens */
 
-@media(min-width:967px) {
+@media(min-width:340px) {
 .container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
