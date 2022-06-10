@@ -1,4 +1,6 @@
-.container {  display: grid;
+/* Removed because it was not formatting well */
+
+/* .container {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     display: block;
@@ -8,6 +10,21 @@
       "attentiongrab "
       "images images "
       "footer footer ";
+  } */
+
+/* ________________________________________________ */
+
+
+  .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "title title title"
+      "attentiongrab attentiongrab attentiongrab"
+      "images images images"
+      "footer footer footer";
   }
   
   .title { 
@@ -21,30 +38,30 @@
       padding: 50px;
     }
 
-  img {
-    width: 100%;
-  }
+ 
   
   .attentiongrab { 
       grid-area: attentiongrab; 
       background-image: url(./backgroundAttnGrab.jpeg);
-      background-size:cover;
+      background-size:fit-content;
       background-repeat: no-repeat;
       min-width: 100%;
+      width: 100%;
+      height: fit-content;
+      padding: 10px;
     }
 
-  .p-attm {
+  .span-attn {
       background-color:  black;
       color: white;
-      float: right;
-      /* margin-right: 50%; */
-      min-width: 100%;
+      margin-right: 30%;
+      margin-bottom: 10px;
+      text-align: left;
     }
 
   .attention {
       background-color: white;
-      float: right;
-      margin-right: 50%;
+      margin-right: 30%;
   }
 
   button {
@@ -58,15 +75,26 @@
   button:hover {
         padding: 12px ;
   }
+
   .images { 
       grid-area: images; 
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
     }
+  
+    img {
+      width: 100%;
+    }
 
   span {
     display: block;
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+    background-color: black;
+    padding: 5px;
+    color: white;
   }
   
   .footer { 
@@ -92,7 +120,7 @@
 /* ________________________________________________ */
 /* Set the style for tablet screens */
 
-@media(min-width:617px) {
+@media(min-width:481px) {
   .container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -104,6 +132,17 @@
       "footer footer footer";
   }
 
+  .attentiongrab {
+    height: auto;
+    width: 100%;
+    background-size: contain;
+  }
+
+  .images {
+    display:inline-flex;
+  }
+
+
 }
 
 
@@ -111,7 +150,7 @@
 /* ________________________________________________ */
 /* Set the style for desktop screens */
 
-@media(min-width:340px) {
+@media(min-width:769px) {
 .container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -129,7 +168,9 @@
   
   .attentiongrab { grid-area: attentiongrab; }
   
-  .images { grid-area: images; }
+  .images { 
+    grid-area: images; 
+  }
   
   .footer { grid-area: footer; }
   
