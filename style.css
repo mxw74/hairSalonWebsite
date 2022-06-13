@@ -1,6 +1,6 @@
 /* Removed because it was not formatting well */
 
-/* .container {  display: grid;
+.container {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     display: block;
@@ -8,50 +8,70 @@
       "title "
       "attentiongrab "
       "attentiongrab "
-      "images images "
-      "footer footer ";
-  } */
+      "images  "
+      "footer ";
+  }
 
 /* ________________________________________________ */
 
 
-  .container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+  /* .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "title title title"
-      "attentiongrab attentiongrab attentiongrab "
-      "images images images"
-      ". footer .";
+      "title title title title"
+      "title title title title"
+      "attentiongrab attentiongrab attentiongrab attentiongrab"
+      "images images images images"
+      "footer footer footer footer";
+  } */
+
+
+  /* .logo {
+    grid-area: logo;
+    border: 3px black solid;
+    margin: 0 auto;
+    width: 100%;
   }
-  
+  .logo img {
+    display: block; */
+    /* margin: 0 auto; */
+
+
   .title { 
       grid-area: title; 
-      display: block;
-      align-items: center;
-      margin: 0 auto;
-      align-self: center;
-      justify-self: center;
-      border: 3px solid black;
-      padding: 50px;
+      /* display: block; */
+      /* align-items: center; */
+      /* margin: 0 auto; */
+      /* border: 3px solid black; */
+      /* padding: 50px; */
+      /* height: fit-content; */
+      /* position:relative; */
+      /* width: 100%; */
+      /* align-self: center; */
+     /* justify-self: center; */
+
     }
 
- 
-  
+
   .attentiongrab { 
       grid-area: attentiongrab; 
       background-image: url(./backgroundAttnGrab.jpeg);
-      background-size:auto;
+      background-size:cover;
       background-repeat: no-repeat;
       min-width: 100%;
+      display: flex;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px;
       /* width: 100%; */
       /* height: fit-content; */
       /* height: fit-content; */
-      display: flex;
       /* background-position: center; */
-      overflow: hidden;
+      /* overflow: hidden; */
     }
 
   span {
@@ -65,6 +85,14 @@
     color: white;
   }
 
+  .span-image {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+    color: black;
+    font-size: 30px;
+  }
   .span-attn {
       background-color:  black;
       color: white;
@@ -98,26 +126,50 @@
 
   .images { 
       grid-area: images; 
-      display: flex;
+      display: block;
       justify-content: center;
       flex-wrap: wrap;
+      margin: 5%;
     }
-  
+
     img {
       width: 100%;
+    }
+
+    img.gallery {
+      border: solid black;
+    }
+
+    .image-block {
+      display: block;
     }
   
   .footer { 
       grid-area: footer; 
+      background-color: rgb(10, 10, 10, .2);
+      width: 100%;
+      /* display: block; */
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 10px;
+      /* padding: top 100px; */
+      /* padding-bottom: 100px; */
     }
 
-  .foot {
-    float: left;
+
+
+  .copyright {
+    /* float: left; */
   }
+/* trying to get my text to align in the center */
+  /* .foot {
+    display: block;
+    padding-top: 100px;
+  } */
   
   .socials {
-    float: right;
-    text-align: right;
+    /* float: right; */
+    /* text-align: right; */
     }
 
   a:hover {
@@ -130,7 +182,7 @@
 /* ________________________________________________ */
 /* Set the style for tablet screens */
 
-@media(min-width:500px) {
+@media(min-width:600px) {
   .container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -152,9 +204,12 @@
     display: flex;
   }
 
-  span {}
-
+  span {
+    display: inline;
+    text-align: center;
+  }
 }
+
 
 
 

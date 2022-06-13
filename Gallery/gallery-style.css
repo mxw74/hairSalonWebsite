@@ -1,0 +1,30 @@
+/* Build my grid  */
+
+.container {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "title"
+      "images"
+      "images"
+      "footer";
+  }
+
+.title {
+    grid-area: title;
+    /* margin: 0 auto;
+    min-width: 100%;
+    text-align: center; */
+}
+
+.images {
+    grid-area: images;
+    display: flex;
+    width: 100%;
+    /* overflow: wrap; */
+    flex-wrap: wrap;
+}
+
+.footer {
+    grid-area: footer;
+}
