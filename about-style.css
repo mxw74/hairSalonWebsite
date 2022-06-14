@@ -78,7 +78,7 @@ nav a {
     /* max-width: 50%; */
     width: 100%;
     text-align: center;
-    overflow-wrap:;
+    /* overflow-wrap:; */
     margin: 0 auto;
     margin-top: 10px;
   }
@@ -87,5 +87,6 @@ nav a {
     display: inline;
     padding: 5px;
     /* margin-left: 10%; */
+    width: 20%;
   }
 }
