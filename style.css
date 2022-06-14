@@ -97,7 +97,7 @@
     }
 
   .attn-text {
-    margin-right: 30%;    
+    margin-right: 30%;   
   }
 
   .attention {
@@ -231,6 +231,7 @@
     margin-left:50%;
     padding: 10px;
     flex-wrap: nowrap;
+    margin-top: 15%; 
   }
 
   .images {
@@ -252,6 +253,7 @@
   .attentiongrab {
     justify-content: right;
     display: inline-block;
+    padding-bottom: 0px;
   }
 
 /* Having issues making the copyright and socials align */

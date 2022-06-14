@@ -42,8 +42,7 @@ html {
 .footer {
     grid-area: footer;
     text-align: center;
-    background-color: #252525;
-    color: white;
+2    color: white;
     padding-bottom: 5%;
 }
 

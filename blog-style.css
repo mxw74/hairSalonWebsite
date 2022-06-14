@@ -1,0 +1,141 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr ;
+    gap: 0px 0px;
+    grid-template-areas: 
+    "title"
+    "header"
+    "post1"
+    "post2"
+    "post3"
+    "footer";
+    text-align: center;
+}
+
+.title {
+    grid-area: title;
+    margin: 0 auto;
+}
+
+#nav {
+    display:block;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+.header {
+    grid-area: header;
+    background-color: black;
+    color: white;
+    margin: 5%;
+}
+
+button {
+    margin: 3%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+button:hover {
+    background-color: black;
+}
+
+.post1, .post2, .post3 {
+    margin: 5%;
+}
+
+.post1 {
+    grid-area: post1;
+    border: solid;
+}
+
+.post1 img {
+    width: 100%;
+}
+
+.post2 {
+    grid-area: post2;
+    border: solid;
+}
+
+.post2 img {
+    width: 100%;
+}
+
+.post3 {
+    grid-area: post3;
+    border: solid
+}
+
+.post3 img {
+    width: 100%;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #252525;
+    color: white;
+}
+
+/* _________________________________________________________ */
+
+@media(min-width:865px) {
+    .container {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 6fr ;
+        gap: 0px 0px;
+        grid-template-areas: 
+        "title title"
+        "header header"
+        "post1 post1"
+        "post2 post2"
+        "post3 post3"
+        "footer footer";
+        text-align: center;
+    }
+
+    .post1 {
+        display: flex;
+        
+    }
+
+    .img1 {
+        width:500px;
+        min-height: fit-content ;
+        margin: 0%;
+        border-right: solid;
+        background-color: #F5F5F5;
+    }
+
+    .post2 {
+        display: flex;
+    }
+
+    .img2 {
+        width:500px;
+        min-height: fit-content ;
+        margin: 0%;
+        border-right: solid;
+        background-color: #F5F5F5;
+    }
+
+    .post3{
+        display: flex;
+    }
+
+    .img3 {
+        width:500px;
+        min-height: fit-content ;
+        margin: 0%;
+        border-right: solid;
+        background-color: #F5F5F5;
+    }
+
+}

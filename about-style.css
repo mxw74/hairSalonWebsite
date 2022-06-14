@@ -89,4 +89,16 @@ nav a {
     /* margin-left: 10%; */
     width: 20%;
   }
+
+  .image {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .contentss {
+    margin: 0 auto;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }
