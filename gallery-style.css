@@ -22,6 +22,33 @@ html {
       height: 100vh;
   }
 
+#nav {
+    display: block;
+    text-align: center;
+    margin: 5px;
+    font-weight: bold;
+    /* background-color: black; */
+    padding: 1px;
+    /* padding-left: 5px;
+    padding-right: 5px; */
+}
+
+#nav span {
+    display: block;
+    text-align: center;
+    margin:0 auto;
+    margin-bottom: 5px;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 1px;
+    /* padding-left: 5px;
+    padding-right: 5px; */
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+}
 .title {
     grid-area: title;
     margin: 0 auto;
@@ -34,7 +61,7 @@ html {
     /* margin: 0 auto; */
     /* place-items: center; */
     text-align: center;
-    background-color: black;
+    background-color: #252525;
     color: white;
     margin: 2%;
 }
@@ -42,7 +69,7 @@ html {
 .footer {
     grid-area: footer;
     text-align: center;
-2    color: white;
+    color: white;
     padding-bottom: 5%;
 }
 
@@ -111,6 +138,8 @@ html {
 }
 .footer {
     grid-area: footer;
+    background-color: #252525;
+    color: white;
 } 
 
 .footer a {
@@ -125,7 +154,55 @@ html {
 @media (min-width:560px) {
 
     .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px 0px;
+        grid-template-areas: 
+        "title "
+        "header"
+        "images"
+        "footer";
+    }
 
+    .title nav {
+        margin: 10% auto;
+    }
+
+    #nav span {
+        display: inline;
+        margin-left: 15px;
+    }
+
+    nav {
+        margin-top: 2%;
+    }
+
+    .images {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;  
+        gap: 10px 20px; 
+        grid-template-areas: 
+        "image-1 image-2 image-3"
+        "image-4 image-5 image-6"
+        "image-7 image-8 image-9"
+        ". image-10 .";
+        justify-items: center;
+        /* margin-right: 5%; */
+        width: 100%;
+        text-align: center;
+    }
+
+    .images img:hover {
+        opacity: .7;
+    }
+
+    .footer {
+        display: flex;
+    }
+
+    .socials {
+        margin-left: 50%;
+        flex-wrap: nowrap;
     }
  
 }
