@@ -113,6 +113,15 @@ html {
     grid-area: footer;
 } 
 
+.footer a {
+    font-size: 30px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    padding: 8px;
+}
+
 @media (min-width:560px) {
 
     .container {

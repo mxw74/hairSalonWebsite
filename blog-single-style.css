@@ -1,0 +1,54 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "title"
+    "header"
+    "images"
+    "body"
+    "footer";
+}
+
+.title {
+    grid-area: title;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+}
+
+.images {
+    grid-area: images;
+    border: solid;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+}
+
+.body {
+    grid-area: body;
+    text-align: center;
+}
+
+.body p {
+    margin: 5%;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+.footer a {
+    font-size: 30px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    padding: 8px;
+}

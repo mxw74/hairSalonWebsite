@@ -1,0 +1,50 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "title"
+        "header"
+        "image"
+        "body"
+        "footer";
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+}
+
+.image {
+    grid-area: image;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    border: solid;
+}
+
+.body {
+    grid-area: body;
+    text-align: center;
+    margin: 5%;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+.footer a {
+    font-size: 30px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    padding: 8px;
+}

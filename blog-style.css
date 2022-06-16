@@ -83,6 +83,15 @@ button:hover {
     color: white;
 }
 
+.footer a {
+    font-size: 30px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    padding: 8px;
+}
+
 /* _________________________________________________________ */
 
 @media(min-width:865px) {
@@ -103,39 +112,56 @@ button:hover {
 
     .post1 {
         display: flex;
-        
     }
 
-    .img1 {
+    .img1 img {
         width:500px;
-        min-height: fit-content ;
-        margin: 0%;
         border-right: solid;
         background-color: #F5F5F5;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sub-post1 {
+        margin-top: 10%;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     .post2 {
         display: flex;
     }
 
-    .img2 {
+    .img2 img {
         width:500px;
         min-height: fit-content ;
         margin: 0%;
         border-right: solid;
         background-color: #F5F5F5;
+    }
+
+    .sub-post2 {
+        margin-top: 10%;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     .post3{
         display: flex;
     }
 
-    .img3 {
+    .img3 img {
         width:500px;
         min-height: fit-content ;
         margin: 0%;
         border-right: solid;
         background-color: #F5F5F5;
+        /* height: 500px; */
     }
 
+    .sub-post3 {
+        margin-top: 10%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 }

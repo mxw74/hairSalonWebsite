@@ -1,0 +1,87 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "title"
+    "header"
+    "form"
+    "footer";
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+}
+
+.form {
+    grid-area: form;
+    text-align: center;
+}
+
+.form div {
+    margin: 8%;
+}
+.form div input{
+    width: 100%;
+    padding: 3%;
+    border: solid 2px;
+    text-align: center;
+}
+
+.form div input::placeholder {
+    text-align: center;
+}
+
+.form div textarea {
+    width: 100%;
+    padding: 3%;
+    border: solid 2px;
+    height: 150px;
+}
+
+.form div textarea::placeholder {
+    text-align: center;
+}
+
+button {
+    max-width: 100%;
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    background-color: gray;
+    margin-bottom: 8%;
+    /* text-align: center; */
+    padding: 25px;
+    margin: 8% auto;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+.footer a {
+    font-size: 30px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    padding: 8px;
+}
+
+@media(min-width:600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            ". title title ."
+            ". header header ."
+            ". form form ."
+            ". footer footer .";
+    }
+}
