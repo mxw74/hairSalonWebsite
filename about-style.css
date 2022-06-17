@@ -26,17 +26,18 @@ nav {
 }
 
 nav a {
-  background-color: black;
   display: block;
-  color: white;
+  color: black;
+  text-decoration: none;
   width: 70%;
   margin: 10px auto;
+  font-weight: bolder;
 }
 
 .header {
     grid-area: header;
     text-align: center;
-    background-color: black;
+    background-color: #252525;
     color: white;
     /* height: fit-content; */
     /* margin: 0 50px; */
@@ -69,6 +70,14 @@ nav a {
 .footer {
   grid-area: footer;
   text-align: center;
+  background-color: #252525;
+  color: white;
+}
+
+.footer a {
+  color: white;
+  background-color: gray;
+  padding: 5px;
 }
 
 @media (min-width:560px) {
@@ -85,8 +94,7 @@ nav a {
 
   nav a {
     display: inline;
-    padding: 5px;
-    /* margin-left: 10%; */
+    margin: 5%;
     width: 20%;
   }
 
@@ -100,5 +108,18 @@ nav a {
     margin: 0 auto;
     margin-left: 15%;
     margin-right: 15%;
+  }
+
+  .footer {
+    margin: 5%;
+  }
+
+  .socials a {
+    width: fit-content;
+  }
+
+  .socials {
+    display: inline;
+    margin: 5%;
   }
 }
